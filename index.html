@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 - Portal de Admisión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">📝 Admisiones 2026</a>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-lg-7">
+        <span class="badge bg-success mb-2 fs-6">Inscripciones Abiertas</span>
+        <h1 class="display-5 fw-bold text-dark mb-3">Forma Parte de la Comunidad Académica</h1>
+        <p class="lead text-secondary mb-4">
+          Completa el formulario oficial de postulación. Nuestro equipo de admisiones se pondrá en contacto para validar tu documentación.
+        </p>
+        <div class="p-3 bg-white border rounded shadow-sm border-start border-4 border-success">
+          <p class="mb-0 fw-bold text-dark">
+            ✓ Requisitos: <span class="fw-normal text-muted">Fotocopia de Cédula y Título de Bachiller.</span>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="card shadow-sm border-0">
+          <div class="card-header bg-primary text-white py-3">
+            <h4 class="card-title mb-0 fs-5 fw-bold">Formulario de Registro</h4>
+          </div>
+          <div class="card-body p-4">
+            <form>
+              <div class="mb-3">
+                <label for="nombreCompleto" class="form-label fw-bold">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombreCompleto" placeholder="Ej. Ana Pérez">
+              </div>
+              <div class="mb-3">
+                <label for="correoElec" class="form-label fw-bold">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="correoElec" placeholder="ana@ejemplo.com">
+              </div>
+              <div class="mb-4">
+                <label for="carreraSelect" class="form-label fw-bold">Carrera de Interés:</label>
+                <select class="form-select" id="carreraSelect">
+                  <option selected disabled>Seleccione una carrera...</option>
+                  <option value="1">Desarrollo de Software</option>
+                  <option value="2">Sistemas y Redes</option>
+                  <option value="3">Diseño UI/UX Digital</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success w-100 fw-bold py-2">Enviar Postulación</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
